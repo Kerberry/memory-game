@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>        
+        <main>
+            <div class="over hidden">
+                <button class="btn-popup over-close"></button>
+                <span class="popup-over">Game over! </span>
+                
+                <span class="popup-score">
+                    Your score <span class="score-fin"></span>
+                </span>
+                <form action="" method="get" class="name-popup" id="enter-name">
+                    <input type="text" name="enter-name" class="name-input" placeholder="Enter your name" autocomplete="off" autofocus="on">
+                    <button type="button" class="name-btn"></button>
+                </form>
+                <button class ="leaderboard-btn">leaderboard</button>
+            </div>
+            <div class="leaderboard hidden">
+                <button class="btn-popup board-close"></button>
+                <h2>leaderboard</h2>
+                <div class="board-row">
+                    <div class="numb">#</div>
+                    <div class="board-name">Name</div>
+                    <div class="board-score">Score</div>
+                </div>
+                <div class="board-row"><div class="numb">1</div></div>
+                <div class="board-row"><div class="numb">2</div></div>
+                <div class="board-row"><div class="numb">3</div></div>
+                <div class="board-row"><div class="numb">4</div></div>
+                <div class="board-row"><div class="numb">5</div></div>
+                <div class="board-row"><div class="numb">6</div></div>
+                <div class="board-row"><div class="numb">7</div></div>
+                <div class="board-row"><div class="numb">8</div></div>
+                <div class="board-row"><div class="numb">9</div></div>
+                <div class="board-row"><div class="numb">10</div></div>
+            </div>
+            <span class="score-item">score:</span><span class="score">0</span>
+            <div class="wrapper">
+                
+            </div>
+        </main>
+        
+        <footer>               
+            <div class="footer-container">
+                <div class="footer-text">© 2022</div>
+                <div class="footer-right">
+                    <a href="https://github.com/Kerberry" class="footer-icon">
+                        <svg class="icon git">
+                            <use xlink:href="./assets/img/logo/git.svg#git"></use>
+                        </svg>
+                    </a>
+                    <a href="https://rs.school/js-stage0/" class="footer-icon">
+                        <svg class="icon">
+                            <use xlink:href="./assets/img/logo/logo_rs.svg#rs"></use>
+                        </svg>
+                    </a>
+                </div>            
+            </div>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
